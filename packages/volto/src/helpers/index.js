@@ -61,6 +61,8 @@ export {
   buildStyleObjectFromData,
   getPreviousNextBlock,
   findBlocks,
+  getBlocksHierarchy,
+  moveBlockEnhanced,
 } from '@plone/volto/helpers/Blocks/Blocks';
 export { default as BodyClass } from '@plone/volto/helpers/BodyClass/BodyClass';
 export { default as ScrollToTop } from '@plone/volto/helpers/ScrollToTop/ScrollToTop';
@@ -93,6 +95,8 @@ export {
   hasApiExpander,
   replaceItemOfArray,
   cloneDeepSchema,
+  insertInArray,
+  removeFromArray,
   arrayRange,
   reorderArray,
   isInteractiveElement,
