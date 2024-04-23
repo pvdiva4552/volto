@@ -39,6 +39,7 @@ export {
   getLanguageIndependentFields,
 } from '@plone/volto/helpers/Content/Content';
 export {
+  _applyBlockInitialValue,
   addBlock,
   insertBlock,
   blockHasValue,

@@ -193,8 +193,12 @@ export function addBlock(formData, type, index, blocksConfig) {
  * to call `onChangeBlock` at their creation time, as this is prone to racing
  * issue on block data storage.
  */
-const _applyBlockInitialValue = ({ id, value, blocksConfig, formData }) => {
-  const blocksFieldname = getBlocksFieldname(formData);
+export const _applyBlockInitialValue = ({
+  id,
+  value,
+  blocksConfig,
+  formData,
+}) => {
   const type = value['@type'];
   blocksConfig = blocksConfig || config.blocks.blocksConfig;
 
@@ -204,6 +208,7 @@ const _applyBlockInitialValue = ({ id, value, blocksConfig, formData }) => {
       value,
       formData,
     });
+    const blocksFieldname = getBlocksFieldname(formData);
     formData[blocksFieldname][id] = value;
   }
 
