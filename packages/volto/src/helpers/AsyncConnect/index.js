@@ -91,11 +91,7 @@ const applyExtenders = (asyncItems, pathname) => {
  * internally "asyncItems").
  */
 export function asyncConnect(
-  asyncItems,
-  mapStateToProps,
-  mapDispatchToProps,
-  mergeProps,
-  options,
+  asyncItems
 ) {
   return (Component) => {
     Component.reduxAsyncConnect = wrapWithDispatch(Component, asyncItems);
